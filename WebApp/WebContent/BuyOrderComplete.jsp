@@ -18,7 +18,7 @@
 	<%@ include file="_Nav.jsp"%>
 	<div class="container">
 		<h1>注文完了</h1>
-		<p>注文を完了しました。</p>
+		<p>注文を完了いたしました。</p>
 		<p>
 			受付番号: <a href="OrderDetail?id=<%=orderId%>"><%=orderId%></a>
 		</p>
