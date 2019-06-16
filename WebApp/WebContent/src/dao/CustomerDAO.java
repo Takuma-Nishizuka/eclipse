@@ -284,4 +284,6 @@ public class CustomerDAO {
 		return false;
 	}
 
+	//ログイン回数リセット処理
+
 }
