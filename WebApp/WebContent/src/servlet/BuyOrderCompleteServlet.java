@@ -13,7 +13,7 @@ import dao.OrdersellbuyDAO;
 import dto.OrdersellbuyDTO;
 
 /**
- * 注文処理
+ * 注文処理のサーブレット
  */
 @WebServlet("/BuyOrderComplete")
 public class BuyOrderCompleteServlet extends HttpServlet {
@@ -48,13 +48,13 @@ public class BuyOrderCompleteServlet extends HttpServlet {
 
 		String number = OrdersellbuyDAO.getNumber();
 		System.out.print(number);
-		
-		
+
+
 		// 注文を実行
 		String orderId =
 				OrdersellbuyDAO.createOrder(order,number);
-		
-		
+
+
 		request.setAttribute("orderId", orderId);
 
 		request.getRequestDispatcher("BuyOrderComplete.jsp").forward(request, response);
